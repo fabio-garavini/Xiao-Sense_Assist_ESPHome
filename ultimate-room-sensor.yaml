@@ -18,14 +18,14 @@ dashboard_import:
   import_full_config: false
 
 packages:
-  device_base: !include common/xiao-esp32s3-esp-idf-base.yaml
-  bluetooth_proxy: !include common/bluetooth-proxy.yaml
-  pir_sensor: !include common/pir-sensor.yaml
-  dht22_sensor: !include common/dht22-sensor.yaml
-  tsl2561_sensor: !include common/tsl2561-sensor.yaml
-  internal-microphone: !include common/internal-microphone.yaml
-  assist_base: !include common/assist-base.yaml
-  micro_wake_word: !include common/micro-wake-word.yaml
+  device_base: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/xiao-esp32s3-esp-idf-base.yaml@main
+  bluetooth_proxy: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/bluetooth-proxy.yaml@main
+  pir_sensor: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/pir-sensor.yaml@main
+  dht22_sensor: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/dht22-sensor.yaml@main
+  tsl2561_sensor: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/tsl2561-sensor.yaml@main
+  internal-microphone: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/internal-microphone.yaml@main
+  assist_base: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/assist-base.yaml@main
+  micro_wake_word: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/micro-wake-word.yaml@main
 
 #wifi:                      # <-- Uncomment this if you want to manually setup wifi credentials
 #  ssid: !secret wifi_ssid
