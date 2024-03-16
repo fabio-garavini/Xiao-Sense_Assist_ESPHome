@@ -1,0 +1,11 @@
+i2c:
+  sda: GPIO5
+  scl: GPIO6
+  scan: true
+  id: bus_a
+
+sensor:
+  - platform: tsl2561
+    name: "Illuminance"
+    address: 0x39
+    update_interval: ${illuminance_update_interval}

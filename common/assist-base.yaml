@@ -1,0 +1,17 @@
+voice_assistant:
+  id: voiceassistant
+  microphone: echo_microphone
+  noise_suppression_level: ${assist_noise_suppression_level}
+  auto_gain: ${assist_auto_gain}
+  volume_multiplier: ${assist_volume_multiplier}
+
+button:
+  - platform: template
+    name: "Voice Assistant"
+    on_press:
+      - if:
+          condition: voice_assistant.is_running
+          then:
+            - voice_assistant.stop:
+          else:
+            - voice_assistant.start:
