@@ -48,7 +48,7 @@ Now let's dive into all the configurations and see their advantages and their di
 
 ### ✨ **Ultimate Room Sensor** ✨
 
-Feature rich sensor, process the wake word on the esp32 but cannot reproduce a response through a speaker. But has everything you need for a room sensor.
+Feature rich sensor, process the wake word on the esp32, cannot reproduce a response through a speaker. But has everything you need for a room sensor.
 
 **Wake Word:** Micro Wake Word
 
@@ -56,11 +56,12 @@ Feature rich sensor, process the wake word on the esp32 but cannot reproduce a r
 
 | Component | Description |
 |------|------|
-| LD2450 | Radar sensor for presence detection |
-| PIR | Passive infrared sensor for motion detection |
-| DHT22 | Temperature and humidity sensor |
-| TSL2561 | Illuminance sensor |
-| Bluetooth | Bluetooth proxy for letting Home Assistant control bluetooth devices or scan for iBeacons |
+| LD2450 📡 | Radar sensor for presence detection |
+| PIR 🏃🏻 | Passive infrared sensor for motion detection |
+| DHT22 🌡️ | Temperature and humidity sensor |
+| TSL2561 ☀️ | Illuminance sensor |
+
+**Bluetooth proxy** for letting Home Assistant control bluetooth devices or scan for iBeacons
 
 **Check out:**
 
@@ -81,7 +82,7 @@ But the Micro Wake Word cannot be used with media player, so the wake word detec
 
 | Component | Description |
 |------|------|
-| PCM5102 | I2S DAC module for audio |
+| PCM5102 🔊 | I2S DAC module for audio |
 
 **Check out:**
 
@@ -102,7 +103,7 @@ Because the Micro Wake Word cannot be used with media player.
 
 | Component | Description |
 |------|------|
-| PCM5102 | I2S DAC module for audio |
+| PCM5102 🔊 | I2S DAC module for audio |
 
 **Check out:**
 
