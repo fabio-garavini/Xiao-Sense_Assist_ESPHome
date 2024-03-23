@@ -9,7 +9,7 @@ substitutions:
   illuminance_update_interval: "5s"
   assist_noise_suppression_level: "1"
   assist_auto_gain: 0dBFS
-  assist_volume_multiplier: "15"
+  assist_volume_multiplier: "14"
   wake_word: hey_jarvis
   log_level: "ERROR"
 
