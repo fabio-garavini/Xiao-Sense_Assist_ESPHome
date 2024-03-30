@@ -1,0 +1,5 @@
+binary_sensor:
+  - platform: gpio
+    pin: GPIO7
+    name: "PIR"
+    device_class: motion

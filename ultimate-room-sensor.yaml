@@ -1,0 +1,32 @@
+substitutions:
+  name: "ultimate-room-sensor"
+  friendly_name: "Ultimate Room Sensor"
+  project_name: "fabio-garavini.ultimate-room-sensor"
+  project_version: "1.0.0"
+  temperature_offset: "0"
+  humidity_offset: "0"
+  temperature_update_interval: "60s"
+  illuminance_update_interval: "5s"
+  assist_noise_suppression_level: "1"
+  assist_auto_gain: 0dBFS
+  assist_volume_multiplier: "15"
+  wake_word: hey_jarvis
+  log_level: "ERROR"
+
+dashboard_import:
+  package_import_url: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/ultimate-room-sensor.yaml@main
+  import_full_config: false
+
+packages:
+  device_base: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/xiao-esp32s3-esp-idf-base.yaml@main
+  bluetooth_proxy: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/bluetooth-proxy.yaml@main
+  pir_sensor: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/pir-sensor.yaml@main
+  dht22_sensor: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/dht22-sensor.yaml@main
+  tsl2561_sensor: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/tsl2561-sensor.yaml@main
+  internal-microphone: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/internal-microphone.yaml@main
+  assist_base: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/assist-base.yaml@main
+  micro_wake_word: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/micro-wake-word.yaml@main
+
+#wifi:                      # <-- Uncomment this if you want to manually setup wifi credentials
+#  ssid: !secret wifi_ssid
+#  password: !secret wifi_password

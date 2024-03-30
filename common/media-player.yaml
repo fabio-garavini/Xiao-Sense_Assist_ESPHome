@@ -1,0 +1,16 @@
+i2s_audio:
+  - id: i2s_speaker
+    i2s_lrclk_pin: GPIO3
+    i2s_bclk_pin: GPIO1
+
+media_player:
+  - platform: i2s_audio
+    name: Speaker
+    id: speaker_media_player
+    i2s_audio_id: i2s_speaker
+    dac_type: external
+    i2s_dout_pin: GPIO2
+    mode: stereo
+
+voice_assistant:
+  media_player: speaker_media_player

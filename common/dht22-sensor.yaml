@@ -1,0 +1,13 @@
+sensor:
+  - platform: dht
+    pin: GPIO8
+    model: DHT22_TYPE2
+    temperature:
+      name: "Temperature"
+      filters:
+        - offset: ${temperature_offset}
+    humidity:
+      name: "Umidity"
+      filters:
+        - offset: ${humidity_offset}
+    update_interval: ${temperature_update_interval}

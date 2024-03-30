@@ -1,0 +1,24 @@
+substitutions:
+  name: "assist-media-player"
+  friendly_name: "Assist Media Player"
+  project_name: "fabio-garavini.assist-media-player"
+  project_version: "1.0.0"
+  assist_noise_suppression_level: "1"
+  assist_auto_gain: 0dBFS
+  assist_volume_multiplier: "15"
+  log_level: "ERROR"
+
+dashboard_import:
+  package_import_url: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/assist-media-player.yaml@main
+  import_full_config: false
+
+packages:
+  device_base: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/xiao-esp32s3-arduino-base.yaml@main
+  internal-microphone: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/internal-microphone.yaml@main
+  assist_base: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/assist-base.yaml@main
+  assist_wake_word: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/assist-wake-word.yaml@main
+  media_player: github://fabio-garavini/Xiao-Sense_Assist_ESPHome/common/media-player.yaml@main
+
+#wifi:                      # <-- Uncomment this if you want to manually setup wifi credentials
+#  ssid: !secret wifi_ssid
+#  password: !secret wifi_password
