@@ -1,6 +1,8 @@
 micro_wake_word:
   models:
     - model: ${wake_word}
+  vad:
+    model: github://esphome/micro-wake-word-models/models/v2/vad.json@main
   on_wake_word_detected:
     then:
       - voice_assistant.start:
