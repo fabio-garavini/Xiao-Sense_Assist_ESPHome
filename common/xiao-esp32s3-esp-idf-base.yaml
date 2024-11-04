@@ -6,7 +6,7 @@ esphome:
     name: ${project_name}
     version: ${project_version} 
   platformio_options:
-    build_flags: -DARDUINO_XIAO_ESP32S3,-DBOARD_HAS_PSRAM
+    build_flags: -DBOARD_HAS_PSRAM
     board_build.arduino.memory_type: qio_opi
     board_build.f_flash: 80000000L
     board_build.flash_mode: qio
@@ -19,11 +19,10 @@ esp32:
   variant: esp32s3
   flash_size: 8MB
   framework:
-#    type: arduino
     type: esp-idf
     sdkconfig_options:
       CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240: y
-      CONFIG_COMPILER_OPTIMIZATION: "Performance" # Debug, Size, Performance, None
+#      CONFIG_COMPILER_OPTIMIZATION: "Performance" # Debug, Size, Performance, None
     version: recommended
 
 logger:
