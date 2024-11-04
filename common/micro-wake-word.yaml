@@ -1,5 +1,6 @@
 micro_wake_word:
-  model: ${wake_word}
+  models:
+    - model: ${wake_word}
   on_wake_word_detected:
     then:
       - voice_assistant.start:
