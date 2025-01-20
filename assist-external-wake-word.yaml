@@ -2,7 +2,7 @@ substitutions:
   name: "assist-external-wake-word"
   friendly_name: "Assist External Wake Word"
   project_name: "fabio-garavini.assist-external-wake-word"
-  project_version: "1.0.0"
+  project_version: "1.0.1"
   assist_noise_suppression_level: "1"
   assist_auto_gain: 0dBFS
   assist_volume_multiplier: "15"
