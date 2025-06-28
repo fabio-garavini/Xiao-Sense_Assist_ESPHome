@@ -2,7 +2,7 @@ substitutions:
   name: "simple-assist-sensor"
   friendly_name: "Simple Assist"
   project_name: "fabio-garavini.simple-assist-push-to-talk"
-  project_version: "1.0.1"
+  project_version: "1.0.2"
   assist_noise_suppression_level: "1"
   assist_auto_gain: 0dBFS
   assist_volume_multiplier: "15"

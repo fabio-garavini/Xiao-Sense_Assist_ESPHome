@@ -2,7 +2,7 @@ substitutions:
   name: "ultimate-room-sensor"
   friendly_name: "Ultimate Room Sensor"
   project_name: "fabio-garavini.ultimate-room-sensor"
-  project_version: "1.0.1"
+  project_version: "1.0.2"
   temperature_offset: "0"
   humidity_offset: "0"
   temperature_update_interval: "60s"
